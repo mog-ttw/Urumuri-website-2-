@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leave a Review | Urumuri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .review-container {
+      min-height: 100vh;
+      padding: 4rem 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 244, 252, 0.95));
+    }
+
+    .review-content {
+      max-width: 700px;
+    }
+
+    .review-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .review-header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 1rem 0;
+      letter-spacing: -0.04em;
+    }
+
+    .review-header p {
+      color: var(--gray-600);
+      font-size: 1.05rem;
+    }
+
+    .review-form {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 2.5rem;
+      box-shadow: 0 28px 80px rgba(14, 94, 255, 0.08);
+      border: 1px solid rgba(14, 94, 255, 0.06);
+    }
+
+    .form-group {
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      margin-bottom: 0.65rem;
+      font-weight: 600;
+      color: var(--black);
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 1rem;
+      border: 2px solid var(--gray-200);
+      border-radius: 16px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      background: var(--surface);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--blue);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(14, 94, 255, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 140px;
+      font-size: 1rem;
+    }
+
+    .rating-group {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .star-rating {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .star {
+      cursor: pointer;
+      transition: transform 0.2s ease, color 0.2s ease;
+      color: var(--gray-200);
+    }
+
+    .star:hover,
+    .star.active {
+      color: var(--yellow);
+      transform: scale(1.2);
+    }
+
+    .rating-label {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+      min-width: 60px;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .form-actions button,
+    .form-actions a {
+      flex: 1;
+      padding: 1rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn-submit {
+      background: var(--blue);
+      color: var(--white);
+      box-shadow: 0 18px 40px rgba(14, 94, 255, 0.18);
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 28px 60px rgba(14, 94, 255, 0.35);
+    }
+
+    .btn-cancel {
+      background: var(--gray-100);
+      color: var(--black);
+      border: 1px solid var(--gray-200);
+    }
+
+    .btn-cancel:hover {
+      background: var(--gray-200);
+      transform: translateY(-2px);
+    }
+
+    .success-message {
+      display: none;
+      background: #e8f5e9;
+      border: 2px solid #4caf50;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #2e7d32;
+    }
+
+    .success-message h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .success-message p {
+      margin: 0;
+      color: #2e7d32;
+    }
+
+    @media (max-width: 640px) {
+      .review-container {
+        padding: 2rem 0;
+      }
+
+      .review-form {
+        padding: 1.5rem;
+      }
+
+      .form-actions {
+        flex-direction: column;
+      }
+
+      .review-header {
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">URUMURI</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#services">Offers</a>
+        <a href="index.html#how-it-works">How it Works</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="review-container">
+      <div class="container review-content">
+        <div class="review-header">
+          <span class="eyebrow">Share your experience</span>
+          <h1>Leave a Review</h1>
+          <p>Help us improve your delivery experience by sharing your feedback</p>
+        </div>
+
+        <div class="success-message" id="successMessage">
+          <h3>Thank you! 🎉</h3>
+          <p>Your review has been submitted successfully. We appreciate your feedback!</p>
+        </div>
+
+        <form class="review-form" id="reviewForm">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+250 7XX XXX XXX" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Type *</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="food">Food Delivery</option>
+              <option value="grocery">Grocery Delivery</option>
+              <option value="pharmacy">Pharmacy Delivery</option>
+              <option value="courier">Courier Services</option>
+              <option value="buyformes">Buy for Me Services</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Rating *</label>
+            <div class="rating-group">
+              <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+              <span class="rating-label" id="ratingLabel">Select rating</span>
+            </div>
+            <input type="hidden" id="rating" name="rating" required />
+          </div>
+
+          <div class="form-group">
+            <label for="review">Your Review *</label>
+            <textarea id="review" name="review" required placeholder="Share your experience with Urumuri..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Submit Review</button>
+            <a href="index.html" class="btn-cancel">Back Home</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer modern-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand footer-brand-link" href="index.html">URUMURI</a>
+        <p>Fast deliveries in Kigali and nearby districts.</p>
+      </div>
+      <div class="footer-column">
+        <p class="footer-heading">Company</p>
+        <a href="index.html#services">Offers</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-column">
+        <p class="footer-heading">Reviews</p>
+        <a href="reviews.html">Leave a Review</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Star rating functionality
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('rating');
+    const ratingLabel = document.getElementById('ratingLabel');
+    const ratingLabels = ['Poor', 'Fair', 'Good', 'Very Good', 'Excellent'];
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const rating = star.getAttribute('data-value');
+        ratingInput.value = rating;
+        ratingLabel.textContent = ratingLabels[rating - 1];
+
+        stars.forEach(s => {
+          if (s.getAttribute('data-value') <= rating) {
+            s.classList.add('active');
+          } else {
+            s.classList.remove('active');
+          }
+        });
+      });
+
+      star.addEventListener('mouseover', () => {
+        const hoverValue = star.getAttribute('data-value');
+        stars.forEach(s => {
+          if (s.getAttribute('data-value') <= hoverValue) {
+            s.style.color = 'var(--yellow)';
+          } else {
+            s.style.color = 'var(--gray-200)';
+          }
+        });
+      });
+    });
+
+    document.getElementById('starRating').addEventListener('mouseleave', () => {
+      stars.forEach(s => {
+        if (s.classList.contains('active')) {
+          s.style.color = 'var(--yellow)';
+        } else {
+          s.style.color = 'var(--gray-200)';
+        }
+      });
+    });
+
+    // Form submission
+    document.getElementById('reviewForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        service: document.getElementById('service').value,
+        rating: document.getElementById('rating').value,
+        review: document.getElementById('review').value,
+        timestamp: new Date().toISOString()
+      };
+
+      // Store review in localStorage (for demo purposes)
+      const reviews = JSON.parse(localStorage.getItem('urumuri_reviews') || '[]');
+      reviews.push(formData);
+      localStorage.setItem('urumuri_reviews', JSON.stringify(reviews));
+
+      // Show success message
+      const successMessage = document.getElementById('successMessage');
+      successMessage.style.display = 'block';
+
+      // Reset form
+      document.getElementById('reviewForm').reset();
+      stars.forEach(s => s.classList.remove('active'));
+      ratingLabel.textContent = 'Select rating';
+
+      // Scroll to success message
+      successMessage.scrollIntoView({ behavior: 'smooth' });
+
+      // Hide success message after 5 seconds and redirect
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
