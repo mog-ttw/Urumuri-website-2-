@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urumuri | Rwanda’s Intelligent Mobility Ecosystem</title>
-  <meta name="description" content="Urumuri is Rwanda's next-generation mobility platform combining transport, food delivery, courier services, merchant intelligence and driver empowerment." />
+  <title>Urumuri Courier | Professional Package Delivery</title>
+  <meta name="description" content="Urumuri Courier offers business parcel delivery, document handling, same-day service and secure tracking for professional customers." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" as="style" onload="this.rel='stylesheet'">
@@ -17,10 +17,10 @@
       <div class="container header-inner">
         <a class="brand" href="index.html">URUMURI</a>
         <nav class="nav-links" id="navLinks">
-          <a href="index.html" data-page="home" class="active">Home</a>
+          <a href="index.html" data-page="home">Home</a>
           <a href="transport.html" data-page="transport">Urumuri Transport</a>
           <a href="food.html" data-page="food">Urumuri Food</a>
-          <a href="courier.html" data-page="courier">Urumuri Courier</a>
+          <a href="courier.html" data-page="courier" class="active">Urumuri Courier</a>
           <a href="merchants.html" data-page="merchants">Merchants</a>
           <a href="drivers.html" data-page="drivers">Drivers</a>
           <a href="about.html" data-page="about">About Us</a>
@@ -40,40 +40,22 @@
     </header>
 
     <main>
-      <section class="hero hero-home">
+      <section class="hero hero-secondary animate-on-scroll">
         <div class="container hero-grid">
-          <div class="hero-copy animate-on-scroll">
-            <p class="eyebrow" data-i18n="home.eyebrow">Next-generation mobility for Rwanda</p>
-            <h1 data-i18n="home.title">Moving Rwanda Forward.</h1>
-            <p class="hero-intro" data-i18n="home.intro">Transportation. Food. Courier. Built around people, powered by intelligent logistics and premium experiences.</p>
+          <div class="hero-copy">
+            <p class="eyebrow">Courier excellence</p>
+            <h1>Urumuri Courier</h1>
+            <p class="hero-intro">Professional package delivery for documents, business parcels and personal shipments with secure handling and same-day options.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="contact.html" data-i18n="home.downloadApp">Download App</a>
-              <a class="btn btn-secondary" href="contact.html" data-i18n="home.becomePartner">Become a Partner</a>
-            </div>
-            <div class="hero-stats">
-              <div data-i18n-stat="operations">
-                <span>24/7</span>
-                <p>Operations intelligence</p>
-              </div>
-              <div data-i18n-stat="fleet">
-                <span>200+</span>
-                <p>Daily fleet deployments</p>
-              </div>
-              <div data-i18n-stat="trusted">
-                <span>Trusted</span>
-                <p>Across Kigali and nearby districts</p>
-              </div>
+              <a class="btn btn-primary" href="contact.html">Request Courier</a>
+              <a class="btn btn-secondary" href="merchants.html">Merchant Solutions</a>
             </div>
           </div>
-          <div class="hero-visual animate-on-scroll" aria-hidden="true">
+          <div class="hero-visual hero-visual-courier" aria-hidden="true">
             <div class="hero-visual-overlay"></div>
             <div class="hero-visual-frame">
-              <div class="hero-badge">Urumuri ecosystem</div>
-              <div class="hero-media">
-                <div class="media-panel media-top">Electric rides</div>
-                <div class="media-panel media-middle">Courier &amp; food flow</div>
-                <div class="media-panel media-bottom">Smart logistics</div>
-              </div>
+              <div class="hero-badge">Secure delivery</div>
+              <div class="media-panel">Protected packaging, trained riders and end-to-end visibility.</div>
             </div>
           </div>
         </div>
@@ -82,80 +64,72 @@
       <section class="section section-highlight">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <p class="eyebrow" data-i18n="highlights.eyebrow">Ecosystem highlights</p>
-            <h2 data-i18n="highlights.title">One platform for transport, food, courier and business intelligence.</h2>
+            <p class="eyebrow">Courier services</p>
+            <h2>Document, business and personal deliveries executed with precision.</h2>
           </div>
           <div class="cards-grid animate-on-scroll">
-            <a class="service-card" href="transport.html" data-i18n-card="transport">
-              <span class="service-icon">🛵</span>
-              <h3>Urumuri Transport</h3>
-              <p>Safe everyday rides with premium safety equipment and intelligent dispatch.</p>
-              <span class="card-link">Explore transport</span>
-            </a>
-            <a class="service-card" href="food.html" data-i18n-card="food">
-              <span class="service-icon">🍱</span>
-              <h3>Urumuri Food</h3>
-              <p>Restaurant and grocery delivery designed for fast, reliable urban living.</p>
-              <span class="card-link">Explore food</span>
-            </a>
-            <a class="service-card" href="courier.html" data-i18n-card="courier">
-              <span class="service-icon">📦</span>
-              <h3>Urumuri Courier</h3>
-              <p>Professional package delivery with secure handling and same-day options.</p>
-              <span class="card-link">Explore courier</span>
-            </a>
+            <article class="service-card">
+              <span class="service-icon">📄</span>
+              <h3>Document Delivery</h3>
+              <p>Urgent papers delivered securely to offices, campuses and partners across Kigali.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon">🏢</span>
+              <h3>Business Parcels</h3>
+              <p>Reliable handling for invoices, retail packages and B2B shipments.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon">🎁</span>
+              <h3>Personal Deliveries</h3>
+              <p>Carefully managed handoffs for gifts, essentials and sensitive items.</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section section-glass">
         <div class="container section-grid animate-on-scroll">
-          <div class="glass-panel panel-primary">
-            <h2 data-i18n="glass.merchantTitle">Premium merchant intelligence</h2>
-            <p data-i18n="glass.merchantDesc">Actionable analytics, inventory forecasting, revenue insights and demand signals for growing businesses.</p>
+          <div class="glass-panel">
+            <h2>Same-Day Delivery</h2>
+            <p>Choose premium speed for time-sensitive deliveries with guaranteed alignment from pickup to drop-off.</p>
           </div>
-          <div class="glass-panel panel-secondary">
-            <h2 data-i18n="glass.driverTitle">Empowered drivers</h2>
-            <p data-i18n="glass.driverDesc">Flexible income, professional training and electric motorcycles for a safer, modern fleet.</p>
+          <div class="glass-panel">
+            <h2>Tracking &amp; handling</h2>
+            <p>Real-time visibility helps you monitor progress, while secure packaging protects every item.</p>
           </div>
         </div>
       </section>
 
-      <section class="section section-features">
+      <section class="section section-highlight">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <p class="eyebrow" data-i18n="features.eyebrow">Premium capabilities</p>
-            <h2 data-i18n="features.title">Built on data, safety and seamless service.</h2>
+            <p class="eyebrow">Professional service</p>
+            <h2>Trained riders, secure processes and package protection at every step.</h2>
           </div>
           <div class="feature-grid animate-on-scroll">
-            <article data-i18n="features.dispatch">
-              <h3>Smart dispatch</h3>
-              <p>Real-time routing ensures every ride and delivery moves faster and safer.</p>
+            <article>
+              <h3>Package protection</h3>
+              <p>Designed for fragile items, valuable shipments and demanding business needs.</p>
             </article>
-            <article data-i18n="features.pricing">
-              <h3>Dynamic pricing</h3>
-              <p>Transparent pricing that considers distance, urgency, traffic and customer value.</p>
+            <article>
+              <h3>Professional training</h3>
+              <p>Courier teams receive service, safety and secure handling training before every route.</p>
             </article>
-            <article data-i18n="features.partnerships">
-              <h3>Merchant partnerships</h3>
-              <p>Tools designed to help businesses track performance, manage inventory and attract demand.</p>
-            </article>
-            <article data-i18n="features.community">
-              <h3>Community care</h3>
-              <p>Discount programs for students and Umuganda participants support Rwanda’s shared future.</p>
+            <article>
+              <h3>Workflow clarity</h3>
+              <p>Order creation, picking, dispatch and delivery updates keep every shipment accountable.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-cta">
-        <div class="container cta-panel animate-on-scroll">
+      <section class="section section-cta animate-on-scroll">
+        <div class="container cta-panel">
           <div>
-            <p class="eyebrow" data-i18n="cta.eyebrow">Partner with Urumuri</p>
-            <h2>Rwanda’s next transport ecosystem starts here.</h2>
-            <p data-i18n="cta.desc">Technology, safety and premium service designed to move riders, businesses and packages with confidence.</p>
+            <p class="eyebrow">Ready to ship</p>
+            <h2>Move documents and packages with a courier service that feels modern, reliable and secure.</h2>
           </div>
-          <a class="btn btn-primary" href="contact.html" data-i18n="cta.button">Start your journey</a>
+          <a class="btn btn-primary" href="contact.html">Schedule Delivery</a>
         </div>
       </section>
     </main>

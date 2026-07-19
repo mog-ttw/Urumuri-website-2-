@@ -1,0 +1,520 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "transport": "Urumuri Transport",
+      "food": "Urumuri Food",
+      "courier": "Urumuri Courier",
+      "merchants": "Merchants",
+      "drivers": "Drivers",
+      "about": "About Us",
+      "contact": "Contact",
+      "safety": "Safety",
+      "reviews": "Reviews",
+      "offers": "Offers",
+      "howItWorks": "How it Works"
+    },
+    "footer": {
+      "tagline": "Rwanda's next-generation mobility platform for transport, food, courier and merchant intelligence.",
+      "taglineShort": "Fast deliveries in Kigali and nearby districts.",
+      "copyright": "© 2026 Urumuri",
+      "headings": {
+        "legal": "Legal",
+        "company": "Company",
+        "support": "Support",
+        "reviews": "Reviews"
+      },
+      "links": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms & Conditions",
+        "cookies": "Cookie Policy",
+        "driverTerms": "Driver Terms",
+        "merchantTerms": "Merchant Terms",
+        "about": "About Us",
+        "drivers": "Drivers",
+        "merchants": "Merchants",
+        "safety": "Safety",
+        "careers": "Careers",
+        "contact": "Contact",
+        "business": "Business Inquiries",
+        "faqs": "FAQs",
+        "downloads": "Downloads",
+        "offers": "Offers",
+        "howItWorks": "How it works",
+        "leaveReview": "Leave a Review"
+      }
+    },
+    "ui": {
+      "themeToggle": "Toggle light and dark mode",
+      "languagePicker": "Choose language"
+    },
+    "hero": {
+      "stats": {
+        "one": {
+          "value": "24/7",
+          "label": "Operations intelligence"
+        },
+        "two": {
+          "value": "200+",
+          "label": "Daily fleet deployments"
+        },
+        "three": {
+          "value": "Trusted",
+          "label": "Across Kigali and nearby districts"
+        }
+      }
+    },
+    "cards": {
+      "transport": {
+        "title": "Urumuri Transport",
+        "description": "Safe everyday rides with premium safety equipment and intelligent dispatch.",
+        "action": "Explore transport"
+      },
+      "food": {
+        "title": "Urumuri Food",
+        "description": "Restaurant and grocery delivery designed for fast, reliable urban living.",
+        "action": "Explore food"
+      },
+      "courier": {
+        "title": "Urumuri Courier",
+        "description": "Professional package delivery with secure handling and same-day options.",
+        "action": "Explore courier"
+      }
+    },
+    "pages": {
+      "home": {
+        "hero": {
+          "eyebrow": "Next-generation mobility for Rwanda",
+          "headline": "Moving Rwanda Forward.",
+          "intro": "Transportation. Food. Courier. Built around people, powered by intelligent logistics and premium experiences.",
+          "primary": "Download App",
+          "secondary": "Become a Partner",
+          "stats": {
+            "one": {
+              "value": "24/7",
+              "label": "Operations intelligence"
+            },
+            "two": {
+              "value": "200+",
+              "label": "Daily fleet deployments"
+            },
+            "three": {
+              "value": "Trusted",
+              "label": "Across Kigali and nearby districts"
+            }
+          },
+          "badge": "Urumuri ecosystem",
+          "mediaTop": "Electric rides",
+          "mediaMiddle": "Courier & food flow",
+          "mediaBottom": "Smart logistics"
+        },
+        "highlights": {
+          "eyebrow": "Ecosystem highlights",
+          "title": "One platform for transport, food, courier and business intelligence."
+        },
+        "glass": {
+          "merchantTitle": "Premium merchant intelligence",
+          "merchantText": "Actionable analytics, inventory forecasting, revenue insights and demand signals for growing businesses.",
+          "driversTitle": "Empowered drivers",
+          "driversText": "Flexible income, professional training and electric motorcycles for a safer, modern fleet."
+        },
+        "features": {
+          "eyebrow": "Premium capabilities",
+          "title": "Built on data, safety and seamless service.",
+          "dispatchTitle": "Smart dispatch",
+          "dispatchText": "Real-time routing ensures every ride and delivery moves faster and safer.",
+          "pricingTitle": "Dynamic pricing",
+          "pricingText": "Transparent pricing that considers distance, urgency, traffic and customer value.",
+          "merchantTitle": "Merchant partnerships",
+          "merchantText": "Tools designed to help businesses track performance, manage inventory and attract demand.",
+          "communityTitle": "Community care",
+          "communityText": "Discount programs for students and Umuganda participants support Rwanda's shared future."
+        },
+        "cta": {
+          "eyebrow": "Partner with Urumuri",
+          "title": "Rwanda's next transport ecosystem starts here.",
+          "text": "Technology, safety and premium service designed to move riders, businesses and packages with confidence.",
+          "button": "Start your journey"
+        }
+      },
+      "transport": {
+        "hero": {
+          "eyebrow": "Flagship service",
+          "headline": "Urumuri Transport",
+          "intro": "Every ride is designed for safety, rider comfort and modern city mobility. Our service is Rwanda's premium choice for everyday travel.",
+          "primary": "Book a Ride",
+          "secondary": "Become a Driver",
+          "badge": "Safe journeys",
+          "media": "Electric bikes with premium safety habits"
+        },
+        "safety": {
+          "eyebrow": "Safe Riding Experience",
+          "title": "Visibility, comfort and electric power for every rider.",
+          "helmetTitle": "Premium helmets",
+          "helmetText": "Every rider and passenger receives certified helmets for safer journeys across Kigali.",
+          "rainTitle": "Rain-ready comfort",
+          "rainText": "Raincoats and protected seating keep passengers dry and secure in any weather.",
+          "reflectiveTitle": "Reflective safety gear",
+          "reflectiveText": "High-visibility branding and reflective trims improve safety on evening rides."
+        },
+        "glass": {
+          "electricTitle": "Electric motorcycles",
+          "electricText": "Our fleet is modern, efficient and built for lower emissions while keeping passengers comfortable.",
+          "passengerTitle": "Passenger-first travel",
+          "passengerText": "Every trip is guided by seat comfort, clear communication and customer-focused service."
+        },
+        "student": {
+          "eyebrow": "Student Transportation Program",
+          "title": "Supporting students with safer, more affordable access to campus.",
+          "discountTitle": "Discounted rides",
+          "discountText": "Students access lower fares so they can travel reliably between campus, internships and home.",
+          "studyTitle": "Study-first mobility",
+          "studyText": "Focused on making transportation one less worry so students can dedicate time to learning.",
+          "youthTitle": "Youth empowerment",
+          "youthText": "Program support includes mentorship, work opportunities and community partnerships."
+        },
+        "cta": {
+          "eyebrow": "Community Support",
+          "title": "Umuganda discounts for riders who help build Rwanda.",
+          "text": "Passengers participating in Umuganda are rewarded with discounted rides, making mobility part of Rwanda's shared growth.",
+          "button": "Learn More"
+        }
+      },
+      "food": {
+        "hero": {
+          "eyebrow": "Food logistics",
+          "headline": "Urumuri Food",
+          "intro": "Restaurant meals, groceries and daily essentials delivered with speed, safety and premium care.",
+          "primary": "Order Now",
+          "secondary": "Partner with Us",
+          "badge": "Seamless delivery",
+          "media": "Fresh meals and groceries bringing convenience home."
+        },
+        "services": {
+          "eyebrow": "Food services",
+          "title": "Restaurant, grocery and buy-for-me delivery in one premium experience.",
+          "restaurantTitle": "Restaurant Delivery",
+          "restaurantText": "From local favorites to premium dining, your meal arrives warm, fast and carefully handled.",
+          "groceryTitle": "Grocery Delivery",
+          "groceryText": "Fresh produce, pantry staples and household essentials ready when you need them most.",
+          "buyTitle": "Buy For Me",
+          "buyText": "Too busy to shop? Our team picks, buys and delivers items on your behalf with trusted accuracy."
+        },
+        "glass": {
+          "workTitle": "At work",
+          "workText": "Office meals and meetings stay on schedule with dependable delivery and live tracking.",
+          "homeTitle": "At home",
+          "homeText": "Groceries and essentials arrive safely so families can focus on the day ahead."
+        },
+        "support": {
+          "eyebrow": "Everyday support",
+          "title": "Built for busy lives, flexible schedules and modern urban demand.",
+          "fastTitle": "Fast fulfillment",
+          "fastText": "Real-time order routing and trained couriers keep deliveries on time.",
+          "secureTitle": "Secure handoff",
+          "secureText": "Careful packaging and safe delivery protect every order from pickup to doorstep.",
+          "smartTitle": "Smart support",
+          "smartText": "Customer service and visibility keep every order in control from start to finish."
+        },
+        "cta": {
+          "eyebrow": "Food made easier",
+          "title": "Order meals, groceries and essentials with a premium delivery experience.",
+          "text": "Every request is handled by trained riders, from kitchen to customer.",
+          "button": "Place an Order"
+        }
+      },
+      "courier": {
+        "hero": {
+          "eyebrow": "Courier excellence",
+          "headline": "Urumuri Courier",
+          "intro": "Professional package delivery for documents, business parcels and personal shipments with secure handling and same-day options.",
+          "primary": "Request Courier",
+          "secondary": "Merchant Solutions",
+          "badge": "Secure delivery",
+          "media": "Protected packaging, trained riders and end-to-end visibility."
+        },
+        "services": {
+          "eyebrow": "Courier services",
+          "title": "Document, business and personal deliveries executed with precision.",
+          "docTitle": "Document Delivery",
+          "docText": "Urgent papers delivered securely to offices, campuses and partners across Kigali.",
+          "businessTitle": "Business Parcels",
+          "businessText": "Reliable handling for invoices, retail packages and B2B shipments.",
+          "personalTitle": "Personal Deliveries",
+          "personalText": "Carefully managed handoffs for gifts, essentials and sensitive items."
+        },
+        "glass": {
+          "sameDayTitle": "Same-Day Delivery",
+          "sameDayText": "Choose premium speed for time-sensitive deliveries with guaranteed alignment from pickup to drop-off.",
+          "trackingTitle": "Tracking & handling",
+          "trackingText": "Real-time visibility helps you monitor progress, while secure packaging protects every item."
+        },
+        "professional": {
+          "eyebrow": "Professional service",
+          "title": "Trained riders, secure processes and package protection at every step.",
+          "protectionTitle": "Package protection",
+          "protectionText": "Designed for fragile items, valuable shipments and demanding business needs.",
+          "trainingTitle": "Professional training",
+          "trainingText": "Courier teams receive service, safety and secure handling training before every route.",
+          "workflowTitle": "Workflow clarity",
+          "workflowText": "Order creation, picking, dispatch and delivery updates keep every shipment accountable."
+        },
+        "cta": {
+          "eyebrow": "Ready to ship",
+          "title": "Move documents and packages with a courier service that feels modern, reliable and secure.",
+          "button": "Schedule Delivery"
+        }
+      },
+      "merchants": {
+        "hero": {
+          "eyebrow": "Merchant intelligence",
+          "headline": "Urumuri Merchants",
+          "intro": "A premium dashboard for smart inventory, revenue tracking and AI-powered decisions tailored for growing businesses.",
+          "primary": "Request Access",
+          "secondary": "Learn More",
+          "badge": "Sales analytics",
+          "media": "Live metrics, demand forecasting and inventory alerts for your business."
+        },
+        "dashboard": {
+          "eyebrow": "Dashboard preview",
+          "title": "Modern sales analytics built for merchants and operators.",
+          "salesToday": "Sales Today",
+          "salesWeek": "Sales This Week",
+          "salesMonth": "Sales This Month",
+          "aov": "Average Order Value",
+          "orders": "Orders",
+          "bestSellers": "Best Sellers",
+          "bestSellersText": "7 menu items leading revenue."
+        },
+        "glass": {
+          "revenueTitle": "Revenue analytics",
+          "revenueText": "Monthly, weekly and daily graphs help you spot peaks, plan stock and optimise promotions.",
+          "productTitle": "Product performance",
+          "productText": "Track top performing and slow moving products to improve inventory decisions."
+        },
+        "intelligence": {
+          "eyebrow": "Merchant intelligence",
+          "title": "Insights that answer the questions every business needs.",
+          "sellsTitle": "What sells most?",
+          "sellsText": "Identify your highest performing dishes and restock with confidence.",
+          "hireTitle": "When to hire?",
+          "hireText": "See peak demand windows and staffing opportunities in real time.",
+          "restockTitle": "Which inventory to restock?",
+          "restockText": "Alerts for slowing items and suggested reorder levels keep shelves full.",
+          "revenueTitle": "Highest revenue items",
+          "revenueText": "Discover the menu and product combinations generating the greatest return."
+        },
+        "future": {
+          "eyebrow": "Future platform",
+          "title": "Upcoming merchant advertising tools",
+          "text": "Grow visibility inside the Urumuri ecosystem with targeted promotions for customers on route.",
+          "button": "Coming Soon"
+        },
+        "pricing": {
+          "eyebrow": "Dynamic Pricing",
+          "title": "Fair and transparent pricing across transport and delivery services.",
+          "text": "Transport pricing remains simple and predictable. Delivery fees may vary based on traffic, distance, time of day and urgency.",
+          "trafficTitle": "Traffic aware",
+          "trafficText": "Pricing follows real route conditions for better service value.",
+          "distanceTitle": "Distance-based",
+          "distanceText": "Transparent fees that reflect the true journey required.",
+          "urgencyTitle": "Urgency tiers",
+          "urgencyText": "Customers choose the speed they need without surprise costs."
+        }
+      },
+      "drivers": {
+        "hero": {
+          "eyebrow": "Driver recruitment",
+          "headline": "Join Urumuri",
+          "intro": "Earn flexible income while driving with modern equipment, safety training and support for growth.",
+          "primary": "Apply Now",
+          "secondary": "Driver Benefits",
+          "badge": "Flexible income",
+          "media": "Electric vehicles and professional gear designed for modern drivers."
+        },
+        "benefits": {
+          "eyebrow": "Driver benefits",
+          "title": "Flexible work, professional training and a safer fleet for every partner.",
+          "incomeTitle": "Flexible income",
+          "incomeText": "Drive on your schedule, choose your routes and get rewarded for consistent service.",
+          "equipmentTitle": "Professional equipment",
+          "equipmentText": "Premium helmets, reflective gear and electric motorcycles are provided for every driver.",
+          "trainingTitle": "Safety training",
+          "trainingText": "Structured onboarding ensures every rider is prepared for safe performance on the road.",
+          "growthTitle": "Growth opportunities",
+          "growthText": "Advance into mentor roles, fleet leadership and specialised delivery services."
+        },
+        "glass": {
+          "electricTitle": "Electric motorcycles",
+          "electricText": "Ride modern vehicles with better efficiency, reliability and comfort for every trip.",
+          "safetyTitle": "Safety support",
+          "safetyText": "Emergency response, insurance-ready procedures and rider-first safety systems."
+        },
+        "cta": {
+          "eyebrow": "Partner with purpose",
+          "title": "Build a professional driving career with Rwanda's next-generation mobility platform.",
+          "button": "Start application"
+        }
+      },
+      "about": {
+        "hero": {
+          "eyebrow": "Our story",
+          "headline": "About Urumuri",
+          "intro": "We are Rwanda's intelligent mobility ecosystem, designed to move people, packages and businesses forward with safety and innovation.",
+          "primary": "Contact Us",
+          "secondary": "Join Our Team",
+          "badge": "Mission driven",
+          "media": "Innovation, safety and community at the core of every experience."
+        },
+        "mission": {
+          "missionTitle": "Mission",
+          "missionText": "To create Rwanda's leading mobility ecosystem that combines transportation, food delivery, courier services and merchant intelligence in one premium platform.",
+          "visionTitle": "Vision",
+          "visionText": "To redefine urban movement across Africa through technology, safety and community-minded service."
+        },
+        "values": {
+          "eyebrow": "Core values",
+          "title": "Innovation, safety, community, integrity and sustainability guide every decision.",
+          "innovationTitle": "Innovation",
+          "innovationText": "We build smarter mobility with data-driven services and intelligent platform design.",
+          "safetyTitle": "Safety",
+          "safetyText": "Passenger protection, rider training and secure delivery are never optional.",
+          "communityTitle": "Community",
+          "communityText": "Discount programs, Umuganda support and youth empowerment help us grow together.",
+          "sustainabilityTitle": "Sustainability",
+          "sustainabilityText": "Electric motorcycles, efficient routing and responsible operations reduce our footprint."
+        },
+        "impact": {
+          "eyebrow": "Impact",
+          "title": "Building a future-ready transportation platform for urban communities.",
+          "text": "Urumuri invests in people, local businesses and safer streets through premium service and strategic partnerships.",
+          "growthTitle": "Local growth",
+          "growthText": "Supporting merchants and drivers with tools that grow businesses across Kigali.",
+          "youthTitle": "Youth empowerment",
+          "youthText": "Programs for students and young drivers help build skills and economic opportunity.",
+          "smartTitle": "Smart growth",
+          "smartText": "Data, analytics and automation keep the platform adaptive, stable and future ready."
+        }
+      },
+      "contact": {
+        "hero": {
+          "eyebrow": "Contact",
+          "headline": "Get in touch with Urumuri",
+          "intro": "Connect with our team for partnerships, support, driver applications and merchant services.",
+          "primary": "Email Us",
+          "secondary": "WhatsApp",
+          "badge": "Support ready",
+          "media": "Modern contact tools for business, drivers and customers."
+        },
+        "info": {
+          "officeTitle": "Office location",
+          "officeText": "Kigali Innovation District, Kigali, Rwanda",
+          "phoneTitle": "Phone",
+          "emailTitle": "Email"
+        },
+        "reach": {
+          "eyebrow": "Reach us",
+          "title": "Business inquiries, support or driver applications...we're here to help.",
+          "businessTitle": "Business inquiries",
+          "businessText": "Partner with Urumuri for merchant services, advertising and logistics collaboration.",
+          "driverTitle": "Driver support",
+          "driverText": "Apply to join our fleet or ask about rider training and equipment.",
+          "customerTitle": "Customer support",
+          "customerText": "Get help with orders, deliveries and platform questions.",
+          "pressTitle": "Press & media",
+          "pressText": "Connect with Urumuri for announcements and media partnerships."
+        },
+        "cta": {
+          "eyebrow": "Stay connected",
+          "title": "Follow our journey as Rwanda's intelligent mobility ecosystem grows.",
+          "button": "Write to us"
+        }
+      },
+      "safety": {
+        "hero": {
+          "eyebrow": "Safety first",
+          "headline": "Urumuri Safety",
+          "intro": "From passengers to packages, safety is the foundation of every journey on the Urumuri network.",
+          "primary": "Contact Support",
+          "secondary": "Driver Training",
+          "badge": "Protection powered",
+          "media": "Premium safety equipment, rider training and emergency support built in."
+        },
+        "passenger": {
+          "eyebrow": "Passenger protection",
+          "title": "Premium helmets, reflective gear and emergency-ready support.",
+          "helmetTitle": "Premium helmets",
+          "helmetText": "High quality helmets are available to every rider and passenger on every trip.",
+          "reflectiveTitle": "Reflective safety",
+          "reflectiveText": "High-visibility gear improves awareness on busy city roads and at night.",
+          "visibilityTitle": "Electric visibility",
+          "visibilityText": "Our electric bikes feature bold branding and lighting for safer travel in traffic."
+        },
+        "glass": {
+          "trainingTitle": "Professional rider training",
+          "trainingText": "Structured programs teach safe handling, customer care and route discipline for every driver.",
+          "packageTitle": "Package protection",
+          "packageText": "Secure packaging, protective seals and careful handoffs keep deliveries intact."
+        },
+        "emergency": {
+          "eyebrow": "Emergency readiness",
+          "title": "Support systems and future-ready insurance for every trip.",
+          "text": "Emergency support, rider check-ins and insurance preparation are part of our long-term service plan.",
+          "supportTitle": "Emergency support",
+          "supportText": "Rapid response processes help keep riders and passengers safe on the road.",
+          "careTitle": "Package care",
+          "careText": "Every courier item is handled with care from pickup to final handoff.",
+          "insuranceTitle": "Insurance ready",
+          "insuranceText": "Future insurance integration ensures a safer platform for every customer."
+        },
+        "cta": {
+          "eyebrow": "Our commitment",
+          "title": "Safety is the promise that shapes every part of the Urumuri platform.",
+          "button": "Speak with us"
+        }
+      },
+      "reviews": {
+        "header": {
+          "eyebrow": "Share your experience",
+          "title": "Leave a Review",
+          "subtitle": "Help us improve your delivery experience by sharing your feedback"
+        },
+        "success": {
+          "title": "Thank you! 🎉",
+          "text": "Your review has been submitted successfully. We appreciate your feedback!"
+        },
+        "form": {
+          "name": "Your Name *",
+          "namePlaceholder": "Enter your full name",
+          "email": "Email Address *",
+          "emailPlaceholder": "your.email@example.com",
+          "phone": "Phone Number",
+          "phonePlaceholder": "+250 7XX XXX XXX",
+          "service": "Service Type *",
+          "servicePlaceholder": "Select a service",
+          "services": {
+            "food": "Food Delivery",
+            "grocery": "Grocery Delivery",
+            "pharmacy": "Pharmacy Delivery",
+            "courier": "Courier Services",
+            "buyformes": "Buy for Me Services",
+            "other": "Other"
+          },
+          "rating": "Rating *",
+          "ratingSelect": "Select rating",
+          "ratingLabels": [
+            "Poor",
+            "Fair",
+            "Good",
+            "Very Good",
+            "Excellent"
+          ],
+          "review": "Your Review *",
+          "reviewPlaceholder": "Share your experience with Urumuri...",
+          "submit": "Submit Review",
+          "cancel": "Back Home"
+        }
+      }
+    }
+  }
+}

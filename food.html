@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urumuri | Rwanda’s Intelligent Mobility Ecosystem</title>
-  <meta name="description" content="Urumuri is Rwanda's next-generation mobility platform combining transport, food delivery, courier services, merchant intelligence and driver empowerment." />
+  <title>Urumuri Food | Restaurant, Grocery and Buy For Me</title>
+  <meta name="description" content="Urumuri Food brings restaurant meals, groceries, pharmacy essentials and buy-for-me services to your door with premium speed and reliability." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" as="style" onload="this.rel='stylesheet'">
@@ -17,9 +17,9 @@
       <div class="container header-inner">
         <a class="brand" href="index.html">URUMURI</a>
         <nav class="nav-links" id="navLinks">
-          <a href="index.html" data-page="home" class="active">Home</a>
+          <a href="index.html" data-page="home">Home</a>
           <a href="transport.html" data-page="transport">Urumuri Transport</a>
-          <a href="food.html" data-page="food">Urumuri Food</a>
+          <a href="food.html" data-page="food" class="active">Urumuri Food</a>
           <a href="courier.html" data-page="courier">Urumuri Courier</a>
           <a href="merchants.html" data-page="merchants">Merchants</a>
           <a href="drivers.html" data-page="drivers">Drivers</a>
@@ -40,40 +40,22 @@
     </header>
 
     <main>
-      <section class="hero hero-home">
+      <section class="hero hero-secondary animate-on-scroll">
         <div class="container hero-grid">
-          <div class="hero-copy animate-on-scroll">
-            <p class="eyebrow" data-i18n="home.eyebrow">Next-generation mobility for Rwanda</p>
-            <h1 data-i18n="home.title">Moving Rwanda Forward.</h1>
-            <p class="hero-intro" data-i18n="home.intro">Transportation. Food. Courier. Built around people, powered by intelligent logistics and premium experiences.</p>
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="food.eyebrow">Food logistics</p>
+            <h1 data-i18n="food.title">Urumuri Food</h1>
+            <p class="hero-intro" data-i18n="food.intro">Restaurant meals, groceries and daily essentials delivered with speed, safety and premium care.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="contact.html" data-i18n="home.downloadApp">Download App</a>
-              <a class="btn btn-secondary" href="contact.html" data-i18n="home.becomePartner">Become a Partner</a>
-            </div>
-            <div class="hero-stats">
-              <div data-i18n-stat="operations">
-                <span>24/7</span>
-                <p>Operations intelligence</p>
-              </div>
-              <div data-i18n-stat="fleet">
-                <span>200+</span>
-                <p>Daily fleet deployments</p>
-              </div>
-              <div data-i18n-stat="trusted">
-                <span>Trusted</span>
-                <p>Across Kigali and nearby districts</p>
-              </div>
+              <a class="btn btn-primary" href="contact.html" data-i18n="food.orderNow">Order Now</a>
+              <a class="btn btn-secondary" href="merchants.html" data-i18n="food.partnerWithUs">Partner with Us</a>
             </div>
           </div>
-          <div class="hero-visual animate-on-scroll" aria-hidden="true">
+          <div class="hero-visual hero-visual-food" aria-hidden="true">
             <div class="hero-visual-overlay"></div>
             <div class="hero-visual-frame">
-              <div class="hero-badge">Urumuri ecosystem</div>
-              <div class="hero-media">
-                <div class="media-panel media-top">Electric rides</div>
-                <div class="media-panel media-middle">Courier &amp; food flow</div>
-                <div class="media-panel media-bottom">Smart logistics</div>
-              </div>
+              <div class="hero-badge">Seamless delivery</div>
+              <div class="media-panel">Fresh meals and groceries bringing convenience home.</div>
             </div>
           </div>
         </div>
@@ -82,80 +64,73 @@
       <section class="section section-highlight">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <p class="eyebrow" data-i18n="highlights.eyebrow">Ecosystem highlights</p>
-            <h2 data-i18n="highlights.title">One platform for transport, food, courier and business intelligence.</h2>
+            <p class="eyebrow" data-i18n="food.services.eyebrow">Food services</p>
+            <h2 data-i18n="food.services.title">Restaurant, grocery and buy-for-me delivery in one premium experience.</h2>
           </div>
           <div class="cards-grid animate-on-scroll">
-            <a class="service-card" href="transport.html" data-i18n-card="transport">
-              <span class="service-icon">🛵</span>
-              <h3>Urumuri Transport</h3>
-              <p>Safe everyday rides with premium safety equipment and intelligent dispatch.</p>
-              <span class="card-link">Explore transport</span>
-            </a>
-            <a class="service-card" href="food.html" data-i18n-card="food">
-              <span class="service-icon">🍱</span>
-              <h3>Urumuri Food</h3>
-              <p>Restaurant and grocery delivery designed for fast, reliable urban living.</p>
-              <span class="card-link">Explore food</span>
-            </a>
-            <a class="service-card" href="courier.html" data-i18n-card="courier">
-              <span class="service-icon">📦</span>
-              <h3>Urumuri Courier</h3>
-              <p>Professional package delivery with secure handling and same-day options.</p>
-              <span class="card-link">Explore courier</span>
-            </a>
+            <article class="service-card">
+              <span class="service-icon">🍽️</span>
+              <h3>Restaurant Delivery</h3>
+              <p>From local favorites to premium dining, your meal arrives warm, fast and carefully handled.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon">🛒</span>
+              <h3>Grocery Delivery</h3>
+              <p>Fresh produce, pantry staples and household essentials ready when you need them most.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-icon">🧾</span>
+              <h3>Buy For Me</h3>
+              <p>Too busy to shop? Our team picks, buys and delivers items on your behalf with trusted accuracy.</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section section-glass">
         <div class="container section-grid animate-on-scroll">
-          <div class="glass-panel panel-primary">
-            <h2 data-i18n="glass.merchantTitle">Premium merchant intelligence</h2>
-            <p data-i18n="glass.merchantDesc">Actionable analytics, inventory forecasting, revenue insights and demand signals for growing businesses.</p>
+          <div class="glass-panel">
+            <h2>At work</h2>
+            <p>Office meals and meetings stay on schedule with dependable delivery and live tracking.</p>
           </div>
-          <div class="glass-panel panel-secondary">
-            <h2 data-i18n="glass.driverTitle">Empowered drivers</h2>
-            <p data-i18n="glass.driverDesc">Flexible income, professional training and electric motorcycles for a safer, modern fleet.</p>
+          <div class="glass-panel">
+            <h2>At home</h2>
+            <p>Groceries and essentials arrive safely so families can focus on the day ahead.</p>
           </div>
         </div>
       </section>
 
-      <section class="section section-features">
+      <section class="section section-highlight">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <p class="eyebrow" data-i18n="features.eyebrow">Premium capabilities</p>
-            <h2 data-i18n="features.title">Built on data, safety and seamless service.</h2>
+            <p class="eyebrow">Everyday support</p>
+            <h2>Built for busy lives, flexible schedules and modern urban demand.</h2>
           </div>
           <div class="feature-grid animate-on-scroll">
-            <article data-i18n="features.dispatch">
-              <h3>Smart dispatch</h3>
-              <p>Real-time routing ensures every ride and delivery moves faster and safer.</p>
+            <article>
+              <h3>Fast fulfillment</h3>
+              <p>Real-time order routing and trained couriers keep deliveries on time.</p>
             </article>
-            <article data-i18n="features.pricing">
-              <h3>Dynamic pricing</h3>
-              <p>Transparent pricing that considers distance, urgency, traffic and customer value.</p>
+            <article>
+              <h3>Secure handoff</h3>
+              <p>Careful packaging and safe delivery protect every order from pickup to doorstep.</p>
             </article>
-            <article data-i18n="features.partnerships">
-              <h3>Merchant partnerships</h3>
-              <p>Tools designed to help businesses track performance, manage inventory and attract demand.</p>
-            </article>
-            <article data-i18n="features.community">
-              <h3>Community care</h3>
-              <p>Discount programs for students and Umuganda participants support Rwanda’s shared future.</p>
+            <article>
+              <h3>Smart support</h3>
+              <p>Customer service and visibility keep every order in control from start to finish.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-cta">
-        <div class="container cta-panel animate-on-scroll">
+      <section class="section section-cta animate-on-scroll">
+        <div class="container cta-panel">
           <div>
-            <p class="eyebrow" data-i18n="cta.eyebrow">Partner with Urumuri</p>
-            <h2>Rwanda’s next transport ecosystem starts here.</h2>
-            <p data-i18n="cta.desc">Technology, safety and premium service designed to move riders, businesses and packages with confidence.</p>
+            <p class="eyebrow">Food made easier</p>
+            <h2>Order meals, groceries and essentials with a premium delivery experience.</h2>
+            <p>Every request is handled by trained riders, from kitchen to customer.</p>
           </div>
-          <a class="btn btn-primary" href="contact.html" data-i18n="cta.button">Start your journey</a>
+          <a class="btn btn-primary" href="contact.html">Place an Order</a>
         </div>
       </section>
     </main>

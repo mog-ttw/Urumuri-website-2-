@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leave a Review | Urumuri</title>
+  <meta name="description" content="Share your Urumuri delivery experience. Leave a review for food, grocery, courier and other services." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css" />
   <style>
     .review-container {
@@ -204,7 +206,12 @@
         <a href="index.html#how-it-works">How it Works</a>
         <a href="index.html#contact">Contact</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+              <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">☾</span>
+          </button>
+        </div>
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -303,86 +310,6 @@
     </div>
   </footer>
 
-  <script>
-    // Star rating functionality
-    const stars = document.querySelectorAll('.star');
-    const ratingInput = document.getElementById('rating');
-    const ratingLabel = document.getElementById('ratingLabel');
-    const ratingLabels = ['Poor', 'Fair', 'Good', 'Very Good', 'Excellent'];
-
-    stars.forEach(star => {
-      star.addEventListener('click', () => {
-        const rating = star.getAttribute('data-value');
-        ratingInput.value = rating;
-        ratingLabel.textContent = ratingLabels[rating - 1];
-
-        stars.forEach(s => {
-          if (s.getAttribute('data-value') <= rating) {
-            s.classList.add('active');
-          } else {
-            s.classList.remove('active');
-          }
-        });
-      });
-
-      star.addEventListener('mouseover', () => {
-        const hoverValue = star.getAttribute('data-value');
-        stars.forEach(s => {
-          if (s.getAttribute('data-value') <= hoverValue) {
-            s.style.color = 'var(--yellow)';
-          } else {
-            s.style.color = 'var(--gray-200)';
-          }
-        });
-      });
-    });
-
-    document.getElementById('starRating').addEventListener('mouseleave', () => {
-      stars.forEach(s => {
-        if (s.classList.contains('active')) {
-          s.style.color = 'var(--yellow)';
-        } else {
-          s.style.color = 'var(--gray-200)';
-        }
-      });
-    });
-
-    // Form submission
-    document.getElementById('reviewForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        service: document.getElementById('service').value,
-        rating: document.getElementById('rating').value,
-        review: document.getElementById('review').value,
-        timestamp: new Date().toISOString()
-      };
-
-      // Store review in localStorage (for demo purposes)
-      const reviews = JSON.parse(localStorage.getItem('urumuri_reviews') || '[]');
-      reviews.push(formData);
-      localStorage.setItem('urumuri_reviews', JSON.stringify(reviews));
-
-      // Show success message
-      const successMessage = document.getElementById('successMessage');
-      successMessage.style.display = 'block';
-
-      // Reset form
-      document.getElementById('reviewForm').reset();
-      stars.forEach(s => s.classList.remove('active'));
-      ratingLabel.textContent = 'Select rating';
-
-      // Scroll to success message
-      successMessage.scrollIntoView({ behavior: 'smooth' });
-
-      // Hide success message after 5 seconds and redirect
-      setTimeout(() => {
-        window.location.href = 'index.html';
-      }, 3000);
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
