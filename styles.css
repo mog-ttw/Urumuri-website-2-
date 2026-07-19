@@ -30,9 +30,9 @@
   --text-muted: #67809a;
   --header-bg: rgba(255,255,255,0.9);
   --header-border: rgba(16,35,61,0.08);
-  --nav-link-color: #19324f;
+  --nav-link-color: #0B1F3A;
   --nav-link-hover-bg: rgba(255,215,0,0.16);
-  --nav-link-hover-color: #0f2b4d;
+  --nav-link-hover-color: #0B1F3A;
   --card-bg: linear-gradient(145deg, #ffffff 0%, #f7fbff 55%, #fff8e7 100%);
   --panel-bg: linear-gradient(145deg, #fefefe 0%, #f2f7fd 100%);
   --footer-bg: #f6faff;
@@ -58,9 +58,9 @@ body[data-theme="dark"] {
   --text-muted: #9aa6b2;
   --header-bg: rgba(5, 12, 24, 0.86);
   --header-border: rgba(255,255,255,0.08);
-  --nav-link-color: #dfe7f5;
+  --nav-link-color: #ffffff;
   --nav-link-hover-bg: rgba(255,215,0,0.14);
-  --nav-link-hover-color: #fff5c2;
+  --nav-link-hover-color: #ffffff;
   --card-bg: #0b1425;
   --panel-bg: #0d1728;
   --footer-bg: #08111d;
@@ -299,7 +299,7 @@ button,
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--midnight);
+  color: var(--text-main);
   flex-shrink: 0;
   white-space: nowrap;
 }
