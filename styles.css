@@ -139,20 +139,12 @@ body[data-theme="dark"] .hero-visual,
 body[data-theme="dark"] .media-panel,
 body[data-theme="dark"] .theme-toggle,
 body[data-theme="dark"] .nav-toggle,
-body[data-theme="dark"] .nav-links.active {
+body[data-theme="dark"] .nav-links.active,
+body[data-theme="dark"] .nav-links a:hover,
+body[data-theme="dark"] .nav-links a.active {
   background: var(--card-bg);
   color: var(--card-text);
   border-color: var(--card-border);
-}
-
-body[data-theme="dark"] .nav-links a {
-  color: #22c55e !important;
-}
-
-body[data-theme="dark"] .nav-links a:hover,
-body[data-theme="dark"] .nav-links a.active {
-  background: var(--nav-link-hover-bg);
-  color: #22c55e !important;
 }
 
 body[data-theme="dark"] .dark-text-override,
@@ -307,7 +299,7 @@ button,
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #22c55e;
+  color: var(--midnight);
   flex-shrink: 0;
   white-space: nowrap;
 }
@@ -324,7 +316,7 @@ button,
 .nav-links a {
   position: relative;
   padding: 0.45rem 0.6rem;
-  color: #22c55e;
+  color: var(--nav-link-color);
   font-size: clamp(0.74rem, 0.85vw, 0.88rem);
   font-weight: 600;
   border-radius: 999px;
