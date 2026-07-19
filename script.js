@@ -2915,6 +2915,14 @@
       navToggle.setAttribute('aria-expanded', String(!expanded));
       navLinks?.classList.toggle('active');
     });
+
+    // Close nav when a link is clicked
+    navLinks?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle?.setAttribute('aria-expanded', 'false');
+        navLinks?.classList.remove('active');
+      });
+    });
     themeToggle?.addEventListener('click', () => {
       applyTheme(document.body.dataset.theme === 'dark' ? 'light' : 'dark');
     });

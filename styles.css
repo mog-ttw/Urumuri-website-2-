@@ -1057,7 +1057,7 @@ body[data-theme="dark"] .cta-panel-inverse p:not(.eyebrow) {
   }
 
   .hero-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
   .cta-panel {
@@ -1085,24 +1085,56 @@ body[data-theme="dark"] .cta-panel-inverse p:not(.eyebrow) {
 @media (max-width: 720px) {
   .header-inner {
     flex-wrap: wrap;
+    padding: 0.6rem 0;
+  }
+
+  .brand {
+    font-size: 1.15rem;
   }
 
   .nav-links {
     display: none;
     width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     background: var(--header-bg);
-    padding: 0.75rem 0.75rem 1rem;
+    padding: 1rem;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     border-bottom: 1px solid var(--header-border);
+    gap: 0.5rem;
+    z-index: 50;
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-links a {
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-links a::after {
+    display: none;
   }
 
   .nav-links.active {
     display: flex;
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .nav-toggle {
@@ -1110,31 +1142,137 @@ body[data-theme="dark"] .cta-panel-inverse p:not(.eyebrow) {
   }
 
   .hero {
-    padding-top: 3rem;
+    padding: 2.5rem 0 2rem;
+  }
+
+  .hero-home {
+    min-height: auto;
   }
 
   .hero-copy h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+
+  .hero-intro {
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
 
   .hero-visual {
-    min-height: 420px;
+    min-height: 360px;
+    border-radius: 24px;
+    margin-top: 1.5rem;
+  }
+
+  .hero-badge {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .media-panel {
+    min-height: 100px;
+    padding: 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-highlight {
+    padding-top: 2.5rem;
+  }
+
+  .service-card,
+  .feature-grid article {
+    transform: none !important;
+    border-radius: 20px;
+    padding: 2rem;
+  }
+
+  .glass-panel {
+    border-radius: 20px;
+    padding: 1.75rem;
+  }
+
+  .cta-panel {
+    border-radius: 20px;
+    padding: 2rem 1.75rem;
+  }
+
+  .footer-grid {
+    gap: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
   }
 }
 
 @media (max-width: 520px) {
+  .container {
+    width: min(100%, calc(100% - 1.5rem));
+  }
+
   .hero-copy h1,
   .section-header h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  .eyebrow {
+    font-size: 0.85rem;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.85rem;
   }
 
-  .hero-stats div,
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .hero-stats div {
+    padding: 1.1rem 1.25rem;
+    border-radius: 16px;
+  }
+
   .btn {
     width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .service-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
+    border-radius: 14px;
+  }
+
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-social a .social-logo {
+    width: 17px;
+    height: 17px;
   }
 }
